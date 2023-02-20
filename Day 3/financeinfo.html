@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-image: radial-gradient(lightgreen,lightblue,lemonchiffon,lavender);
+        background-color: l;
+       }
+      h2
+      {
+        color: tomato;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin-top: 40px;
+      }
+      table{
+        border: 3px solid blue;
+        padding: 20px;
+        background-color:aliceblue;
+      }
+      #tab2
+      {
+        margin-top: -25px;
+      }
+      #bit
+      {
+        margin-left: 80px;
+      }
+      
+    </style>
+</head>
+<body>
+    <h2>Financial Information</h2>
+    <center>
+        <form>
+    <table>
+        
+        <tr>
+            <td><Label>Salaried</Label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><Label>Yearly Income</Label></td>
+            <td><input type="text"></td>
+        </tr><tr>
+            <td><Label>Monthly Expense</Label></td>
+            <td><input type="range" min="0" max="10000" step="100" value="5000"></td>
+        </tr><tr>
+            <td><Label>Existing Loan Information</Label></td><br>
+            <td><input type="checkbox"><lable>Personal Loan</lable><br>
+                <input type="checkbox"><lable>Student Loan</lable><br>
+                <input type="checkbox"><lable>Auto Loan</lable><br>
+                <input type="checkbox"><lable>Medical Loan</lable><br>
+                <input type="checkbox"><lable>Family Loan</lable><br>
+                <input type="checkbox"><lable>Wedding Loan</lable><br>
+                <input type="checkbox"><lable>Vacation Loan</lable><br>
+                <input type="checkbox"><lable>Two-Wheeler Loan</lable></td>
+                </tr>
+                <tr id="bit">
+            
+            <td><input type="submit"></td>
+            <td><input type="reset"></td></tr>
+    </table>
+</form>
+</center>
+<h2>Loan Requirements</h2>
+<center>
+    <form>
+<table id="tab2">
+    <tr>
+        <td><label>Loan amount</label></td>
+        <td><input type="text"></td>
+        <br>
+    </tr>
+    <tr>
+        <td><label>Tenure</label></td>
+        <td><input type="text"></td>
+        </tr><br>
+        <tr>
+        <td><label>Collateral</label></td>
+        <td><input type="text"></td><br></tr>
+        <tr>
+        <td><label>Loan type</label></td>
+        <td><input type="radio"><label>Home Loan</label><br>
+                <input type="radio" id="stu" name="loan"><lable for="stu">Student Loan</lable><br>
+                <input type="radio" id="gol" name="loan"><label for="gol">Gold Loan</lable><br>
+                <input type="radio" id="med" name="loan"><lable for="med">Medical Loan</lable><br>
+                <input type="radio" id="fam" name="loan"><lable for="fam">Family Loan</lable><br>
+                <input type="radio" id="wed" name="loan"><lable for="wed">Wedding Loan</lable><br>
+                <input type="radio" id="vac" name="loan"><lable for="vac">Vacation Loan</lable><br>
+                <input type="radio" id="two" name="loan"><lable for="two">Two-Wheeler Loan</lable></td>
+    </tr>
+    <tr id="bit">
+            
+        <td><input type="submit"></td>
+        <td><input type="reset"></td></tr>
+    
+</table>
+</form>
+</center>
+</body>
+</html>

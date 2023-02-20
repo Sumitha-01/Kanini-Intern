@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: solid blue 2px;
+            margin-top: -200px;
+            background-color: aquamarine;
+        }
+        th,td{
+            padding: 15px;
+        }
+        body{
+            background-image: radial-gradient(lavender,lightgreen,lightblue,lightgray,lightcoral);
+            
+        }
+        .error
+        {
+            border: 2px solid lightsalmon;
+        }
+        .form{
+            padding: 50px;
+        }
+        
+    </style>
+    <script>
+        //  function userlog()
+        //  {
+        //     var username="Sumi"
+        //     var enter_name=document.getElementById("name").value
+        //     if(enter_name==''||enter_name!=username)
+        //     {
+        //         document.getElementById("user").innerHTML="Enter the valid user name";
+        //         document.getElementById("name").style.border="2px solid red";
+        //         return false;
+        //     }
+        //     document.getElementById("user").innerHTML="";
+        //     document.getElementById("name").style.border="2px solid green";
+        //     return true;
+        function myFunction() {
+  // Get the value of the input field with id="numb"
+  let x = document.getElementById("ph.no").value;
+  // If x is Not a Number or less than one or greater than 10
+  let text;
+  if (isNaN(x) || x > 1 || x < 10) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+            
+    </script>
+</head>
+<body>
+    <H1 style="text-align: center;">Basic Information</H1>
+    <center>
+        <form class="form">
+
+    <table>
+    <tr>
+     <td><label>Name</label></td>
+     <td><input type="text" align="center" id="name"  onkeyup="userlog()"></td>
+     <br>
+     </tr>
+     <small class="error" id="user"></small>
+    <tr>
+     <td><label>Age</label></td>
+     <td> <input type="number" align="center" id="age" class="error"></td>
+   </tr> <br><br>
+    <tr>
+    <td><label>DOB</label></td>
+     <td><input type="date id="dob" class="error""> </td>
+   </tr>
+   <br><br>
+   <tr>
+    <td><label>Email</label></td>
+    <td><input type="email" id="email" class="error"> </td><br><br>
+    </tr>
+    <tr>
+    <td><label>Ph.no</label></td>
+    <td><input type="text" id="ph.no" class="error"> </td><br><br>
+    </tr>
+    <tr>
+    <td><label>Address</label></td>
+    <td><input type="text" id="address" class="error"></td><br><br>
+    </tr>
+    <tr> 
+    <td><label>Gender</label></td><br>
+    <td><input type="radio" name="gen"><label>Male</label>
+    <input type="radio" name="gen"><label>Female</label>
+    <input type="radio" name="gen"><label>Prefer not to say</label></td>
+    </tr>
+    <tr>
+    <td><input type="submit"></td>
+    <td><input type="reset" ></td>
+    </tr>
+</table>
+</form>
+</center>
+</body>
+</html>
