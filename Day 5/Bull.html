@@ -1,0 +1,85 @@
+<!doctype html>
+<head>
+    <title>Document</title>
+    <script>
+        function check() {
+    var Original_Word = document.getElementById("card1").value;
+    var Guessing_Word = document.getElementById("card2").value;
+    var cow = 0;
+    var bull = 0;
+    if (Original_Word.length == Guessing_Word.length) {
+        for (var i = 0; i < Original_Word.length; i++) {
+            for (var j = 0; j < Guessing_Word.length; j++) {
+                if (Original_Word.charAt(i) == Guessing_Word.charAt(j)) {
+                    if (i == j)
+                        cow += 1;
+                    else
+                        bull += 1;
+                }
+            }
+        }
+    }
+    console.log("cow = " + cow + "  " + "bull = " + bull);
+    if (cow == Original_Word.length)
+        console.log("you win!!!");
+    document.getElementById("card1").value = "";
+}
+    </script>
+    <style>
+        body{
+            background-image: url(image/game.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #card1
+        {
+            font-family: cursive;
+            font-weight: bold;
+            color: brown;
+            border-color: teal;
+            box-shadow: 2px 2px;
+        }
+        #card2 
+        {
+            font-family: cursive;
+            font-weight: bold;
+            color: brown;
+             border-color: teal;
+             box-shadow: 2px 2px;
+        }
+        h1{
+            font-family: monospace;
+            font-weight: lighter;
+        }
+        #card3
+        {
+            border-color:tomato;
+            box-shadow: 2px 2px saddlebrown; 
+        }
+        .cont
+        {
+            border: 3px solid green;
+            padding: 20px;
+            width: 25%;
+            /* padding-left: 80px; */
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div>
+    <h1 ><center>Here we go!!</center></h1>
+    <div class="cont">
+    <label id="card1"><h2>Original Word here</h2></label>
+    <input type="password" id="card1">
+    <br><br>
+    <label id="card2"><h2>Guess Word here</h2></label>
+    <input type="text" id="card2">
+    <br><br>
+   <center><button id="card3" onclick="check()">Check here</button></center> 
+</div>
+     </div>
+    </center>
+</body>
+</html>
