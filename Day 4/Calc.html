@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont
+        {
+            margin-left: 10px;
+            border-color: blueviolet;
+
+        }
+        .style
+        {
+            border: 2px solid saddlebrown;
+            padding: 20px;
+            width: 30%;
+            background-color: antiquewhite;
+            
+            
+        }
+        marquee
+        {
+            color: tomato;
+            font-weight: bolder;
+            font-family: cursive;
+            font-size: 18px;
+        }
+        #calc
+        {
+            border: 2px solid blueviolet;
+        }
+        body{
+            background-image: url(image/border.jpeg);
+            height: 100%;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+        }
+        .num1
+        {
+            border-color: teal;
+        }
+    </style>
+    
+</head><body>  
+    <center>
+        <h1>Make your math easy!!!</h1>
+  
+    <div class= "style">  
+    <form name = "cal">  
+          
+        <center >
+      <input id = "calc" type ="text" name = "res" placeholder="Happy Calculations!!"> <br> <br> 
+      <div class="cont">   
+      
+      <input type = "button" class="num1" value = "1" onclick = "cal.res.value += '1' ">  &nbsp;&nbsp;
+      <input type = "button" value = "2" class="num1" onclick = "cal.res.value += '2' ">  &nbsp;&nbsp;
+      <input type = "button" value = "3" class="num1" onclick = "cal.res.value += '3' ">  &nbsp;&nbsp;
+      
+      <br> <br>  
+        
+      <input type = "button" class="num1"  value = "4" onclick = "cal.res.value += '4' ">&nbsp;&nbsp;
+      <input type = "button" class="num1" value = "5" onclick = "cal.res.value += '5' ">  &nbsp;&nbsp;
+      <input type = "button"  class="num1" value = "6" onclick = "cal.res.value += '6' "> &nbsp;&nbsp;
+      <br><br> 
+      <input type = "button" class="num1"  value = "7" onclick = "cal.res.value += '7' ">  &nbsp;&nbsp;
+      <input type = "button" class="num1" value = "8" onclick = "cal.res.value += '8' "> &nbsp;&nbsp;
+      <input type = "button"class="num1"  value = "9" onclick = "cal.res.value += '9' ">  &nbsp;&nbsp;
+      
+      <br> <br>  
+        
+      <input type = "button" value = "+" class="num1" onclick = "cal.res.value += '+' ">  &nbsp;&nbsp;
+      <input type = "button" value = "0"  class="num1" onclick = "cal.res.value += '0' ">  &nbsp;&nbsp;
+      <input type = "button" value = "-" class="num1"  onclick = "cal.res.value += '-' ">  &nbsp;&nbsp;
+      <br> <br>  
+        
+      
+      <input type = "button" class="num1" value = "/" onclick = "cal.res.value += '/' ">  &nbsp;&nbsp;
+      <input type = "button" class="num1" value = "*" onclick = "cal.res.value += '*' ">  &nbsp;&nbsp;
+       
+      <input type = "button" value = "=" class="num1" onclick = "cal.res.value = eval(cal.res.value) ">  &nbsp;&nbsp;
+      <br>   
+    <br>
+      <input type = "button" value = "Clear All"  class="num1" onclick = "cal.res.value = ' ' " id= "clear" >  &nbsp;&nbsp;
+      <br>   
+    </center>
+</center>
+    </div>
+    </form>  
+    </div>  
+    <marquee width="60%" direction="left" height="60px">
+        I am Everywhere.
+        </marquee>
+    </body>  
+    </html>  
