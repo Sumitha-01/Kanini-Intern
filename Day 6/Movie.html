@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color:skyblue;
+        }
+       #tabb
+       {
+        border-radius: 5px;
+        border-color: rgb(112, 95, 211);
+       }
+
+      #fields
+      {
+        border: 2px solid saddlebrown;
+        width: 40%;
+        margin-top: 30px;
+        background-color: antiquewhite;
+      }
+      th,td
+      {
+        padding: 10px;
+      }
+      #con
+      {
+        margin-top: -120px;
+        margin-bottom: 20px;
+       
+      }
+      #myButton
+      {
+        margin-bottom: 25px;
+      }
+      h1
+      {
+        color: rgb(59, 16, 95);
+        font-family: serif;
+        font-size: 36px;
+        font-style: italic;
+        font-weight: bolder;
+      }
+      label{
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:blue;
+      }
+     
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Movie Details</h1>
+    <div id="fields">
+        <table id="con">
+            <tr>
+        <td><label>Movie Name:</label></td>
+        <td><input type="text" placeholder="Enter movie name" id="tabb" /></td>
+    </tr>
+    <br><br>
+    <tr>
+        <td><label>Movie Duration:</label></td>
+        <td><input type="text" id="tabb" placeholder="Enter movie duration" /></td><br><br>
+    </tr>
+    <br><br>
+    <tr>
+        <td><label>Movie Rating:</label></td>
+        <td><input type="text" id="tabb" placeholder="Enter movie rating" /></td>
+    </tr><br><br>
+    </table>
+        <button id="myButton">Show data</button>
+    </div><br>
+    <br>
+    <div id="result"></div>
+    <script>
+        document.getElementById('myButton').onclick = showData;
+
+function showData() {
+    var labels = document.querySelectorAll('label'),
+        fields = document.querySelectorAll('input'),
+        res = '';
+    for (var i = 0; i < fields.length; i++) {
+        var name = labels[i].textContent,
+            value = fields[i].value;
+        res += '<b>' + name + '</b> ' + value + '<br>';
+    }
+    document.getElementById('result').innerHTML = res;
+}
+    </script>
+    </center>
+</body>
+</html>
